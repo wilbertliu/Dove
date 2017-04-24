@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Dove" customModule="Dove" customModuleProvider="target">
+            <connections>
+                <outlet property="textField" destination="xfB-FC-XyS" id="tmd-71-2jC"/>
+                <outlet property="titleLabel" destination="eU1-bn-xhq" id="UuK-ik-i1C"/>
+                <outlet property="underlineView" destination="8M5-MU-oEf" id="XqQ-bO-9q0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Hello from Dove!" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xfB-FC-XyS">
+                    <rect key="frame" x="0.0" y="94.5" width="240" height="17"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8M5-MU-oEf">
+                    <rect key="frame" x="0.0" y="119.5" width="240" height="0.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="7lR-aI-0zO"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello from Dove!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eU1-bn-xhq">
+                    <rect key="frame" x="0.0" y="77.5" width="240" height="12"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="eU1-bn-xhq" firstAttribute="leading" secondItem="xfB-FC-XyS" secondAttribute="leading" id="0Qj-eo-mJ7"/>
+                <constraint firstItem="eU1-bn-xhq" firstAttribute="trailing" secondItem="xfB-FC-XyS" secondAttribute="trailing" id="0Qo-nx-xsQ"/>
+                <constraint firstItem="xfB-FC-XyS" firstAttribute="top" secondItem="eU1-bn-xhq" secondAttribute="bottom" constant="5" id="3yp-G0-2B9"/>
+                <constraint firstItem="8M5-MU-oEf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BEr-ir-w4K"/>
+                <constraint firstItem="xfB-FC-XyS" firstAttribute="trailing" secondItem="8M5-MU-oEf" secondAttribute="trailing" id="EvL-2k-DsG"/>
+                <constraint firstItem="8M5-MU-oEf" firstAttribute="top" secondItem="xfB-FC-XyS" secondAttribute="bottom" constant="8" id="Oos-xo-INX"/>
+                <constraint firstItem="xfB-FC-XyS" firstAttribute="leading" secondItem="8M5-MU-oEf" secondAttribute="leading" id="pS8-Mw-Oaz"/>
+                <constraint firstAttribute="bottom" secondItem="8M5-MU-oEf" secondAttribute="bottom" id="t4m-fq-x57"/>
+                <constraint firstAttribute="trailing" secondItem="8M5-MU-oEf" secondAttribute="trailing" id="vRH-gF-RxS"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137" y="137"/>
+        </view>
+    </objects>
+</document>

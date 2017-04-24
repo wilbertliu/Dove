@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF1CEE5D1EADFCD400E05145 /* Dove.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF1CEE5C1EADFCD400E05145 /* Dove.xib */; };
+		CF1CEE5F1EADFCDF00E05145 /* Dove.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1CEE5E1EADFCDF00E05145 /* Dove.swift */; };
 		CF5E5CF81EADFB49004937B3 /* Dove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF5E5CEE1EADFB49004937B3 /* Dove.framework */; };
 		CF5E5CFD1EADFB49004937B3 /* DoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5E5CFC1EADFB49004937B3 /* DoveTests.swift */; };
 		CF5E5CFF1EADFB49004937B3 /* Dove.h in Headers */ = {isa = PBXBuildFile; fileRef = CF5E5CF11EADFB49004937B3 /* Dove.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF1CEE5C1EADFCD400E05145 /* Dove.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Dove.xib; sourceTree = "<group>"; };
+		CF1CEE5E1EADFCDF00E05145 /* Dove.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dove.swift; sourceTree = "<group>"; };
 		CF5E5CEE1EADFB49004937B3 /* Dove.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Dove.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF5E5CF11EADFB49004937B3 /* Dove.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dove.h; sourceTree = "<group>"; };
 		CF5E5CF21EADFB49004937B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			children = (
 				CF5E5CF11EADFB49004937B3 /* Dove.h */,
 				CF5E5CF21EADFB49004937B3 /* Info.plist */,
+				CF1CEE5C1EADFCD400E05145 /* Dove.xib */,
+				CF1CEE5E1EADFCDF00E05145 /* Dove.swift */,
 			);
 			path = Dove;
 			sourceTree = "<group>";
@@ -148,6 +154,7 @@
 				TargetAttributes = {
 					CF5E5CED1EADFB49004937B3 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					CF5E5CF61EADFB49004937B3 = {
@@ -179,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1CEE5D1EADFCD400E05145 /* Dove.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF1CEE5F1EADFCDF00E05145 /* Dove.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +331,7 @@
 		CF5E5D031EADFB49004937B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -334,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilbertliu.Dove;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -341,6 +352,7 @@
 		CF5E5D041EADFB49004937B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -360,6 +372,7 @@
 		CF5E5D061EADFB49004937B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DoveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilbertliu.DoveTests;
@@ -371,6 +384,7 @@
 		CF5E5D071EADFB49004937B3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = DoveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wilbertliu.DoveTests;
@@ -398,6 +412,7 @@
 				CF5E5D041EADFB49004937B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5E5D051EADFB49004937B3 /* Build configuration list for PBXNativeTarget "DoveTests" */ = {
 			isa = XCConfigurationList;
@@ -406,6 +421,7 @@
 				CF5E5D071EADFB49004937B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
